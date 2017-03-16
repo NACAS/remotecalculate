@@ -1,0 +1,47 @@
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            .result {
+                font-size: 30px;
+            }
+
+            .status {
+                font-family: Consolas;
+
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Remote calculator</h1>
+        <p>This web app can calculate two numbers using a remote API</p>
+
+        <hr />
+
+        <p>Enter the host URL of your API (e.g. http://localhost:12345/api)</p>
+        <input type="url" id="apiHost" />
+
+        <br /><br />
+
+        <p>Enter a number</p>
+        <input type="number" id="inputNumber1" />
+
+        <p>Enter another number</p>
+        <input type="number" id="inputNumber2" />
+
+        <br /><br />
+        <button id="calculate">Calculate</button>
+
+        <br /><br />
+        <h3>Result</h3>
+        <p class="result">...</p>
+
+        <br /><br />
+        <h4>Status</h4>
+        <p class="status">...</p>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

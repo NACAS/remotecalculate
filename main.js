@@ -25,7 +25,7 @@
 			console.log("Calculating... %o", json);
 			$status.text("Calculating...");
 
-			$.ajax($apiHost.val() + "/calculate", {
+			$.ajax("https://" + $apiHost.val() + "/calculate", {
 				type: "POST",
 				contentType: "application/json; charset=utf-8",
 				dataType: "json",
